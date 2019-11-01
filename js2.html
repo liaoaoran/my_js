@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+
+<body>
+</body>
+<script>
+    var arr = [1, 2, 333, 100, 34, 6, 78, 0];
+
+
+
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let k = 0; k < arr.length - 1 - i; k++) {
+            if (arr[k] > arr[k + 1]) {
+                let temp = arr[k];
+                arr[k] = arr[k + 1];
+                arr[k + 1] = temp;
+            }
+        }
+    }
+
+    console.log(arr)
+</script>
+
+</html>
